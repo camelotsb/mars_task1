@@ -16,4 +16,4 @@
 - export, being a built-in function, gets directly interpreted by bash and thus can be used in external programs only within bash -c "export sample=1; echo \$sample"
 - Now, in the given case when 'export rovername=vajra' is executed, even when a new shell session is started with $bash the variable rovername is recoganised to have the value vajra, and echo $rovername will give vajra as output.
 - where as when 'rovername=vajra' is executed, after changing the shell session the variable will not be recoganised, and if we try echo $rovername there'll be a blank output
---
+---
