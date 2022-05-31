@@ -28,3 +28,10 @@ let rand=${RANDOM}%42
 password="${password}${set_char[$rand]}"
 done
 echo $password
+
+#soln 3: here ive generated a 4 digit pin starting with 1
+
+echo
+echo "The 4 digit pin generatod with (meathod 3 ) is  :"
+echo $(($RANDOM % 1000 +1000))
+
